@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+        background-image:url('700.jpg');
+        background-size:cover;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size:50px;
+        color:white;
+    }
+    .video-container {
+        margin-bottom: 20px;
+    }
+    .video {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    p{
+      font-size:50px;
+      color:white;
+    }
+    h1{
+      color:white;
+      font-size:50px;
+    }
+    h3 {
+      font-size:50px;
+      color:white;
+    }
+    button{
+      font-size:50px
+    }
+</style>
+</head>
+<body>
+<h1> Happy 3rd Monthsarry✌️🥹 </h1>
+
+<div class="video-container">
+    <div class="video" id="video1">
+        <h3>Video 1</h3>
+        <video controls width="
+        900" height="1000" id="videoPlayer1">
+            <source src="100.mp4" type="video/mp4">
+            <source src="video1.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>First Date Jabii🤞</p>
+        <button onclick="playVideo('videoPlayer1')">Play</button>
+        <button onclick="pauseVideo('videoPlayer1')">Pause</button>
+        <button onclick="displayInfo('Video 1')">Show Info</button>
+    </div>
+
+    <div class="video" id="video2">
+        <h3>Video 2</h3>
+        <video controls width="900" height="1000" id="videoPlayer2">
+            <source src="200.mp4" type="video/mp4">
+            <source src="video2.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>Night Walking 🌃 </p>
+        <button onclick="playVideo('videoPlayer2')">Play</button>
+        <button onclick="pauseVideo('videoPlayer2')">Pause</button>
+        <button onclick="displayInfo('Video 2')">Show Info</button>
+    </div>
+    <div class="video" id="video2">
+        <h3>Video 3</h3>
+        <video controls width="900" height="1000" id="videoPlayer3">
+            <source src="300.mp4" type="video/mp4">
+            <source src="video2.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>Monthsarry Myday🌷 </p>
+        <button onclick="playVideo('videoPlayer3')">Play</button>
+        <button onclick="pauseVideo('videoPlayer3')">Pause</button>
+        <button onclick="displayInfo('Video 3')">Show Info</button>
+    </div>
+    <div class="video" id="video2">
+        <h3> video 4</h3>
+        <video controls width="900" height="1000" id="videoPlayer4">
+            <source src="B.mp4" type="video/mp4">
+            <source src="video2.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>First Myday 🥹 </p>
+        <button onclick="playVideo('videoPlayer4')">Play</button>
+        <button onclick="pauseVideo('videoPlayer4')">Pause</button>
+        <button onclick="displayInfo('Video 4')">Show Info</button>
+    </div>
+    <div class="video" id="video2">
+        <h3>video 5</h3>
+        <video controls width="900" height="1000" id="videoPlayer2">
+            <source src="500.mp4" type="video/mp4">
+            <source src="video5.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>First Myday 🥹</p>
+        <button onclick="playVideo('videoPlayer5')">Play</button>
+        <button onclick="pauseVideo('videoPlayer5')">Pause</button>
+        <button onclick="displayInfo('Video 5')">Show Info</button>
+    </div>
+</div>
+
+<script>
+    function playVideo(videoId) {
+        const video = document.getElementById(videoId);
+        video.play();
+    }
+
+    function pauseVideo(videoId) {
+        const video = document.getElementById(videoId);
+        video.pause();
+    }
+
+    function displayInfo(videoTitle) {
+        alert(`Additional Information for ${videoTitle}`);
+    }
+</script>
+
+</body>
+</html>
